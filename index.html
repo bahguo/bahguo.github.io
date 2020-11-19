@@ -53,10 +53,10 @@ var msgid=23;var xhr=new XMLHttpRequest();xhr.onerror=function(){};xhr.onreadyst
 <form action="javascript:void(0);">
       <input type="text" id="txt1" onkeyup="showHint(this.value)">
       <select id="ops1">
-            <option value="qq">kucing</option>
-            <option value="netease">163</option>
-            <option value="migu">migu</option>
-            <option value="kugou">anjing</option>
+            <option value="tx">kucing</option>
+            <option value="wyy">163</option>
+            <option value="mg">migu</option>
+            <option value="kg">anjing</option>
       </select>
       <span id="txtHint">hasil</span>
 <script>
@@ -72,7 +72,7 @@ if (str.length==0) {
             document.getElementById("txtHint").innerHTML=xmlhttp.responseText;
         }//music.moresound.tk/api.php?search=qq&w=modol&p=1&n=20
     };//music-api-jwzcyzizya.now.sh/api/search/song/xiami?limit=5&page=1&key=LIU9293/musicAPI
-    xmlhttp.open('GET','//cors-anywhere.herokuapp.com/http://y444.cn/api/v1/search/v3/?keyword='+str+'&src='+ops1.value+'&page=1&size=10',true);//47.112.23.238
+    xmlhttp.open('GET','//cors-anywhere.herokuapp.com/http://music.y444.cn/api/v1/search/v3/?keyword='+str+'&src='+ops1.value+'&page=1&size=10',true);//47.112.23.238
     xmlhttp.setRequestHeader('x-requested-with','com.dolphinbrowser.zero.jp')//music.hzz.cool/search-song/song_search_v2?keyword=hezhizheng/vue-music-dev&platform=WebFilter&page=1&pagesize=10
     xmlhttp.send(/*'types=search&count=5&name='+str+'&source='+ops1.value+'&time='+(new Date).getTime()+'&pages=1&token=a11936bf4dd5de18d7beb57dca52eefb6739fdff'*/);//3.api.music.qugeek.com/
 }    
