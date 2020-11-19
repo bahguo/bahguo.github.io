@@ -53,7 +53,7 @@ var msgid=23;var xhr=new XMLHttpRequest();xhr.onerror=function(){};xhr.onreadyst
 <form action="javascript:void(0);">
       <input type="text" id="txt1" onkeyup="showHint(this.value)">
       <select id="ops1">
-            <option value="qq">Qt</option>
+            <option value="WebFilter">Qt</option>
             <option value="wy">163</option>
             <option value="xm">Xamarin</option>
       </select>
@@ -69,9 +69,9 @@ if (str.length==0) {
     xmlhttp.onreadystatechange=function() {
         if (xmlhttp.readyState==4 && xmlhttp.status==200) {
             document.getElementById("txtHint").innerHTML=xmlhttp.responseText;
-        }
+        }////music.moresound.tk/api.php?search=qq&w=modol&p=1&n=20
     };//music-api-jwzcyzizya.now.sh/api/search/song/xiami?limit=5&page=1&key=https://github.com/LIU9293/musicAPI
-    xmlhttp.open("GET","//cors-anywhere.herokuapp.com/http://music.moresound.tk/api.php?search="+ops1.value+"&w="+str+"&p=1&n=20",true);
+    xmlhttp.open("GET","//cors-anywhere.herokuapp.com/https://music.hzz.cool/search-song/song_search_v2?keyword="+str+"&platform="+ops1.value+"&page=1&pagesize=20",true);
     xmlhttp.setRequestHeader("x-requested-with","com.dolphinbrowser.zero.jp")
     xmlhttp.send();
 }    
